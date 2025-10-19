@@ -5,9 +5,9 @@ const jobs = new Map<string, { id: string; status: string; progress: number; mes
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { jobId: string } }
+  { params }: { params: Promise<{ jobId: string }> }
 ) {
-  const { jobId } = params
+  const { jobId } = await params
 
   const stream = new ReadableStream({
     start(controller) {

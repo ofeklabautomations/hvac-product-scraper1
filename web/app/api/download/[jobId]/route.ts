@@ -5,10 +5,10 @@ import path from 'path'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { jobId: string } }
+  { params }: { params: Promise<{ jobId: string }> }
 ) {
   try {
-    const { jobId } = params
+    const { jobId } = await params
     const outputDir = path.join(process.env.SCRAPER_ROOT || '/Users/ofeksuchard/load55-productimporter', 'output', 'jobs', jobId)
 
     // Check if job directory exists
