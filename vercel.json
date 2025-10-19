@@ -1,11 +1,11 @@
 {
-  "functions": {
-    "web/app/api/scrape/route.ts": {
-      "maxDuration": 300
-    }
-  },
   "buildCommand": "cd web && npm run build",
   "outputDirectory": "web/.next",
-  "installCommand": "cd web && npm install"
+  "installCommand": "cd web && npm install",
+  "functions": {
+    "app/api/scrape/route.ts": {
+      "maxDuration": 300
+    }
+  }
 }
 
