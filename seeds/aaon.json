@@ -1,0 +1,18 @@
+{
+  "manufacturer": "AAON",
+  "base_url": "https://www.aaon.com",
+  "start_urls": [
+    "https://www.aaon.com/products/"
+  ],
+  "product_link_selectors": [
+    "a[href*='/product']",
+    "a[href*='/products/']"
+  ],
+  "deny_patterns": [
+    "news", "blog", "careers", "privacy", "terms", "contact"
+  ],
+  "pdf_keywords": [
+    "submittal", "spec", "specification", "catalog", "i&o", "iom", "manual", "ahri"
+  ],
+  "max_depth": 2
+}

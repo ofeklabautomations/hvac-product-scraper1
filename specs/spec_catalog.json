@@ -1,0 +1,142 @@
+{
+  "chiller_air_cooled": {
+    "product_type_name": "Air-Cooled Chiller",
+    "fields": {
+      "model": {
+        "value_type": "string",
+        "aliases": ["model", "model number", "catalog number"]
+      },
+      "refrigerant": {
+        "value_type": "enum",
+        "aliases": ["refrigerant", "refrig"],
+        "allowed": ["R-410A", "R-32", "R-454B", "R-134a", "R-513A"]
+      },
+      "capacity_ton": {
+        "value_type": "number",
+        "canonical_unit": "ton",
+        "aliases": ["capacity", "cooling capacity", "tons", "kw"]
+      },
+      "eer": {
+        "value_type": "number",
+        "aliases": ["eer"]
+      },
+      "ieer": {
+        "value_type": "number",
+        "aliases": ["ieer"]
+      },
+      "power_supply": {
+        "value_type": "string",
+        "aliases": ["voltage", "power", "power supply", "electrical"]
+      },
+      "mca_a": {
+        "value_type": "number",
+        "canonical_unit": "A",
+        "aliases": ["mca", "min circuit ampacity"]
+      },
+      "mop_a": {
+        "value_type": "number",
+        "canonical_unit": "A",
+        "aliases": ["mop", "max overcurrent protection"]
+      },
+      "sound_dba": {
+        "value_type": "number",
+        "canonical_unit": "dB(A)",
+        "aliases": ["sound", "sound pressure", "noise"]
+      },
+      "length_in": {
+        "value_type": "number",
+        "canonical_unit": "in",
+        "aliases": ["length", "l"]
+      },
+      "width_in": {
+        "value_type": "number",
+        "canonical_unit": "in",
+        "aliases": ["width", "w"]
+      },
+      "height_in": {
+        "value_type": "number",
+        "canonical_unit": "in",
+        "aliases": ["height", "h"]
+      },
+      "weight_lb": {
+        "value_type": "number",
+        "canonical_unit": "lb",
+        "aliases": ["weight", "shipping weight", "unit weight", "kg"]
+      },
+      "ahri_id": {
+        "value_type": "string",
+        "aliases": ["ahri", "ahri cert", "ahri certificate", "reference number"]
+      }
+    }
+  },
+  "rtu": {
+    "product_type_name": "Rooftop Unit",
+    "fields": {
+      "model": {
+        "value_type": "string",
+        "aliases": ["model", "model number"]
+      },
+      "capacity_ton": {
+        "value_type": "number",
+        "canonical_unit": "ton",
+        "aliases": ["capacity", "cooling capacity", "tons", "kw"]
+      },
+      "cfm": {
+        "value_type": "number",
+        "canonical_unit": "CFM",
+        "aliases": ["airflow", "cfm"]
+      },
+      "esp_inwc": {
+        "value_type": "number",
+        "canonical_unit": "inH2O",
+        "aliases": ["esp", "external static pressure"]
+      },
+      "seer2": {
+        "value_type": "number",
+        "aliases": ["seer2"]
+      },
+      "eer": {
+        "value_type": "number",
+        "aliases": ["eer"]
+      },
+      "ieer": {
+        "value_type": "number",
+        "aliases": ["ieer"]
+      },
+      "power_supply": {
+        "value_type": "string",
+        "aliases": ["voltage", "power supply"]
+      },
+      "mca_a": {
+        "value_type": "number",
+        "canonical_unit": "A",
+        "aliases": ["mca", "min circuit ampacity"]
+      },
+      "mop_a": {
+        "value_type": "number",
+        "canonical_unit": "A",
+        "aliases": ["mop", "max overcurrent protection"]
+      },
+      "length_in": {
+        "value_type": "number",
+        "canonical_unit": "in",
+        "aliases": ["length"]
+      },
+      "width_in": {
+        "value_type": "number",
+        "canonical_unit": "in",
+        "aliases": ["width"]
+      },
+      "height_in": {
+        "value_type": "number",
+        "canonical_unit": "in",
+        "aliases": ["height"]
+      },
+      "weight_lb": {
+        "value_type": "number",
+        "canonical_unit": "lb",
+        "aliases": ["weight", "kg"]
+      }
+    }
+  }
+}

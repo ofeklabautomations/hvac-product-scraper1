@@ -1,0 +1,13 @@
+playwright
+beautifulsoup4
+lxml
+pdfplumber
+pandas
+requests
+python-dotenv
+pydantic
+tenacity
+urllib3
+tqdm
+pint
+pyyaml
