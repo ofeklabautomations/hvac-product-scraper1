@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server'
 
 // In-memory job storage (same as in route.ts)
-const jobs = new Map<string, any>()
+const jobs = new Map<string, { id: string; status: string; progress: number; message: string; totalProducts: number; currentProduct: number; outputDir: string }>()
 
 export async function GET(
   request: NextRequest,

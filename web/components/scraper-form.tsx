@@ -96,7 +96,7 @@ export default function ScraperForm() {
       a.click()
       window.URL.revokeObjectURL(url)
       document.body.removeChild(a)
-    } catch (err) {
+    } catch {
       setError('Download failed')
     }
   }

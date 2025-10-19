@@ -5,7 +5,7 @@ import fs from 'fs'
 import path from 'path'
 
 // In-memory job storage (in production, use Redis or database)
-const jobs = new Map<string, any>()
+const jobs = new Map<string, { id: string; status: string; progress: number; message: string; totalProducts: number; currentProduct: number; outputDir: string }>()
 
 export async function POST(request: NextRequest) {
   try {
@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
 
     // Start Python scraper
     const pythonPath = process.env.PYTHON_PATH || '/Users/ofeksuchard/load55-productimporter/.venv/bin/python'
-    const scraperPath = path.join(process.env.SCRAPER_ROOT || '/Users/ofeksuchard/load55-productimporter', 'src')
+    // const scraperPath = path.join(process.env.SCRAPER_ROOT || '/Users/ofeksuchard/load55-productimporter', 'src')
     
     const child = spawn(pythonPath, [
       '-m', 'src.crawl',
