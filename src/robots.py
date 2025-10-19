@@ -19,3 +19,4 @@ def allowed(user_agent: str, base_url: str, url: str) -> bool:
         return rp.can_fetch(user_agent, url)
     except Exception:
         return True  # if robots can't be read, default to allow (you can make this stricter)
+

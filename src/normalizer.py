@@ -121,3 +121,4 @@ def normalize_specs(raw: Dict[str, str], product_type: str, catalog_path: str = 
             out[canon] = v
 
     return out
+

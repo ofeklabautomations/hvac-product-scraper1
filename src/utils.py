@@ -18,3 +18,4 @@ def join_url(base: str, href: str) -> str:
     if href.startswith("http://") or href.startswith("https://"):
         return href
     return urljoin(base, href)
+

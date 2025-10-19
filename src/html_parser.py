@@ -55,3 +55,4 @@ def extract_links_and_specs(html: str, base_url: str) -> Tuple[List[Tuple[str,st
 def guess_model(text: str) -> str:
     m = MODEL_PAT.search(text or "")
     return m.group(1) if m else ""
+

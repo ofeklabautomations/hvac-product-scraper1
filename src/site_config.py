@@ -9,3 +9,4 @@ class SiteConfig(BaseModel):
     deny_patterns: List[str] = []
     pdf_keywords: List[str] = []
     max_depth: int = 2
+

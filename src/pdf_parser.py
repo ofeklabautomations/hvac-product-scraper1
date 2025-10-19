@@ -23,3 +23,4 @@ def extract_kv_from_pdf(pdf_bytes: bytes) -> Dict[str, str]:
                         if k and v and k not in data:
                             data[k] = v
     return data
+

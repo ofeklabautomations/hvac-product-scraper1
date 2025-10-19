@@ -20,3 +20,4 @@ def classify_product_type(title: str, url: str, page_text: str) -> str:
         if re.search(pat, t):
             return label
     return "unknown"
+

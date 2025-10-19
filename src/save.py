@@ -50,3 +50,4 @@ def append_normalized(row: dict):
     with open(NORMALIZED_CSV, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=NORMALIZED_HEADERS)
         writer.writerow(row)
+

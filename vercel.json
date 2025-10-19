@@ -8,3 +8,4 @@
   "outputDirectory": "web/.next",
   "installCommand": "cd web && npm install"
 }
+
