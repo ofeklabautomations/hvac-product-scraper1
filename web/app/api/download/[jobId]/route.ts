@@ -52,7 +52,7 @@ export async function GET(
       }
     }, 1000)
 
-    return new Response(zipBuffer.buffer, {
+    return new Response(new Uint8Array(zipBuffer), {
       headers: {
         'Content-Type': 'application/zip',
         'Content-Disposition': `attachment; filename="hvac-scraper-results-${jobId}.zip"`,
