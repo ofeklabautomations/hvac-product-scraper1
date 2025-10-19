@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
               ...jobs.get(jobId),
               ...progress
             })
-          } catch (e) {
+          } catch {
             // Ignore non-JSON lines
           }
         }
